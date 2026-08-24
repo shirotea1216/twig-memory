@@ -55,6 +55,7 @@ export function registerNodeTransport(): boolean {
             model: opts?.model || model,
             temperature: opts?.temperature ?? 0.3,
             max_tokens: opts?.maxTokens ?? 700,
+            reasoning_effort: 'none',
             messages,
           }),
           signal: ctrl.signal,
